@@ -14,7 +14,9 @@
     "start": "node tasks/serve.js",
     "pretest": "eslint tasks test test_rendering src examples",
     "test": "node tasks/test.js",
-    "debug-server": "node tasks/serve-lib.js"
+    "debug-server": "node tasks/serve-lib.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "main": "dist/ol.js",
   "repository": {
@@ -47,7 +49,8 @@
     "rbush": "2.0.1",
     "temp": "0.8.3",
     "vector-tile": "1.3.0",
-    "walk": "2.3.9"
+    "walk": "2.3.9",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "clean-css-cli": "4.0.12",
@@ -117,5 +120,6 @@
       "name": "vectortile",
       "browserify": true
     }
-  ]
+  ],
+  "snyk": true
 }
