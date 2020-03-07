@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "async": "2.3.0",
-    "browserify": "14.3.0",
+    "browserify": "15.0.0",
     "closure-util": "1.19.0",
     "derequire": "2.0.6",
     "fs-extra": "3.0.0",
